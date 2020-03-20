@@ -128,14 +128,14 @@ def transplant(a: Node, b: Node) = {
 		a => a.p.left = Some(b)
 		_ => a.p.right = Some(b)
 	}
-	b.p = u.p
+	v.p = u.p
 }
 
 
 def nodeDelete(node: Node) = {
 	(node.left, node.right) match {
-		case (Some(left), None) => transplant(node, node.right)
-		case (None , Some(right)) => transplant(node, node.left)
+		case (Some(left), None) => transplant(node, node.left)
+		case (None , Some(right)) => transplant(node, node.right)
 		case _ => {
 			val minRight = treeMinimum(node.right)
 			if (minRight.p != node){
