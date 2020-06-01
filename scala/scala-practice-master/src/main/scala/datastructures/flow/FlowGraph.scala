@@ -1,8 +1,7 @@
-package datastructures
+package datastructures.flow
 
 import scala.collection.mutable
-import scala.collection.mutable.Set
-import scala.collection.mutable.Map
+import scala.collection.mutable.{ Map, Set }
 
 case class Vertex(
     id: Int,
