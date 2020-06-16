@@ -13,7 +13,6 @@ class RedBlackTree:
         self.root = None
         self.nil = Node(key=None, color=True)
 
-
     def insert(self, node):
         return self.__node_insert(node, self.root)
 

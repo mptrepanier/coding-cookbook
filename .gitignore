@@ -3,3 +3,7 @@ scala/scala-practice-master/target
 scala/scala-practice-master/.idea
 scala/scala-practice-master/project/target
 python/python-practice-master/.idea
+python/python-practice-master/venv
+scala/scala-test-master
+pyspark/.idea
+pyspark/venv

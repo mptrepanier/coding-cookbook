@@ -1,0 +1,2 @@
+--G. Select the earliest date of each salespersons order, along with their ID.
+SELECT salesperson_id, DATE_PART('year', order_date), COUNT(*) OVER (PARTITION BY DATE_PART('year',order_date)) FROM orders

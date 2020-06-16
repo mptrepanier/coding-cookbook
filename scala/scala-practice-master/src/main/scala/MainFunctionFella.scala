@@ -22,7 +22,7 @@ object MainFunctionFella {
     */
   def main(args: Array[String]): Unit = {
     println("Woo!")
-    kruskalTest
+    externalSortTest
   }
 
   //    val test1 = Array(0, 0, -100, 100, 100, -100, 0, 0)
@@ -40,6 +40,13 @@ object MainFunctionFella {
   // dijkstraTest
   // directoryRecurseTest
   // mergeSortTest
+
+  def externalSortTest = {
+    val arr = Array.fill(20)(scala.util.Random.nextDouble)
+    arr.foreach(println)
+    ExternalSort.externalSort(arr)
+
+  }
 
   def treeTest = {
     val keys = Array(0, 10, -10, 5, -5, 15, -15, 20)

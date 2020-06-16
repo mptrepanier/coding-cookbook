@@ -159,7 +159,7 @@ class Graph {
       current.discover(time)
       val neighbors = adjacencyList(current.id)
       neighbors.foreach { neighbor =>
-        recursiveDFT(neighbor)
+        if (neighbor.status == Status.UNDISCOVERED) recursiveDFT(neighbor)
       }
       time += 1
       current.finish(time)
